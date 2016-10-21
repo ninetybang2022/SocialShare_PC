@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享测试</title>
+</head>
+<body>
+<style>
+    .share-btns> a{
+        display:inline-block;
+        width:100px;
+        box-sizing: border-box;
+        text-align: center;
+        height:50px;
+        line-height: 50px;
+        border:1px solid #919191;
+        cursor: pointer;
+    }
+    .share-btns>a:hover{
+        border:1px solid #ccc;
+    }
+</style>
+    <div class="share-btns">
+        <a title="分享到QQ空间" cmd="qzone" class="share-qzone qzonebtn">QQ空间</a>
+        <a title="分享到QQ好友" cmd="qim" class="share-qqim sqqbtn" >QQ好友</a>
+        <a title="分享到新浪微博" cmd="sina" class="share-sina sinabtn">微博</a>
+    </div>
+
+<script src="http://cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+<script src="./share.js"></script>
+<script>
+    share.config = {
+        //分享网页
+        url:location.href,
+        //分享标题
+        title:'test',
+        //分享内容
+        desc:'test',
+        //分享描述
+        summary:'test',
+        //开发者KEY
+        appkey:{},
+        //site信息
+        site:'buka',
+        //分享图片
+        pic:'xx.jpg'
+    }
+</script>
+</body>
+</html>
